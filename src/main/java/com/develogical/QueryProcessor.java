@@ -17,6 +17,10 @@ public class QueryProcessor {
             return "bye";
         }
         
+        if (query.toLowerCase().contains("your name")) {
+            return "mc01";
+        }
+        
         return "";
     }
 }
