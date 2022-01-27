@@ -42,4 +42,14 @@ public class QueryProcessorTest {
                 containsString("mc01"));
     }
     
+    public void knowsLargestNum() throws Exception {
+        assertThat(queryProcessor.process("number is the largest"),
+                containsString("20556"));
+    }
+    
+    public void knowsPlus() throws Exception {
+        assertThat(queryProcessor.process("plus"),
+                containsString("+"));
+    }
+    
 }
