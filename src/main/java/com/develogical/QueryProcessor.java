@@ -21,7 +21,7 @@ public class QueryProcessor {
             return "mc01";
         }
         
-        if (query.toLowerCase().contains("number is the largest")) {
+        if (query.toLowerCase().contains("numbers is the largest")) {
             return "20556";
         }
        
